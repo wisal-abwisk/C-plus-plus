@@ -23,7 +23,7 @@ int main()
 		}
 		for(int i = 0; i < elements_2; i++)
 		{
-		cout <<"Enter element array subset s" << i+1 << " : ";
+		cout <<"Enter element array subset " << i+1 << " : ";
 		cin >> array_2[i];
 		}
 		for(int i = 0; i < elements_2; i++)
