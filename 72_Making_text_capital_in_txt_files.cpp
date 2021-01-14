@@ -19,7 +19,8 @@ int main()
 	else
 		cout << "Error";
 	
-	copyupper(); 
+	copyupper();
+	
 return 0;
 }
 
