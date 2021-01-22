@@ -9,7 +9,10 @@ int main()
 	cin >> cols;
 	cout << "Enter the number of rows for the words: ";
 	cin >> rows;
-	char array[rows][cols];
+	char** array = new char*[rows];
+	for(int i=0; i<rows; i++)
+		array[i] = new char[cols];
+		
 	for ( int i = 0; i < rows; i++)
 	{
 		for(int j = 0; j < cols; j++)
@@ -45,5 +48,9 @@ int main()
 	}
 	
 	cout << element_to_count <<" is reapeated "<<count<<" times.";
+	
+	for(int i = 0; i < rows; i++)
+		delete[] array[i];
+	delete[] array;
 return 0;
 }

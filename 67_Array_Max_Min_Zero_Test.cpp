@@ -5,7 +5,6 @@ int calculation(int *elements, int[]);
 
 int main()
 {
-	int *elements;
 	int number;
 	cout << "Enter number of element: ";
 	cin >> number;

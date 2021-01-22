@@ -5,15 +5,17 @@ int main()
 {
 	bool subset = false;
 	int elements_1, elements_2;
-	int array_1[elements_1], array_2[elements_2];
+	
 	cout <<"Enter the Number of elements you want to enter (main set) : ";
 	cin >> elements_1;
 	cout << "Enter the number of elements in you want in (subset) : ";
 	cin >> elements_2;
+	int* array_1 = new int[elements_1];
+	int* array_2 = new int[elements_2];
 	if(elements_2 > elements_1)
 	{
 		cout << "Subset's elements cant be more than main set elements";	
-	}	
+	}
 	else
 	{
 		for(int i = 0; i < elements_1; i++)
@@ -41,5 +43,8 @@ int main()
 		cout << subset << " TRUE";
 	else
 		cout << subset << " FALSE";
+		
+	delete[] array_1;
+	delete[] array_2;
 return 0;
 }

@@ -15,7 +15,7 @@ int main()
 	{
 		array[i] = new int[cols];
 	}
-	 print_numbers(array, rows, cols);	
+	print_numbers(array, rows, cols);	
 	for(int i = 0; i < rows; i++)
 		delete[] array[i];
 	delete[] array;

@@ -16,7 +16,7 @@ int main()
 	str_input_write.open("Count.txt" , ios::out);
 	if(str_input_write)
 	{
-		str_input_write << str;
+		str_input_write << string_input;
 		str_input_write.close();
 	}
 	else

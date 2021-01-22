@@ -36,9 +36,8 @@ int main()
 				else
 				{
 					bankServiceFee=bankCharges+bankChequeFee;
-			        }
+			    }
 			cout<<"Bank Service Fee is $"<<bankServiceFee<<endl;
 	     }
 return 0;
-}
-	      
+}    

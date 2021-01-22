@@ -39,8 +39,4 @@ int main()
 	}
 	while(yesOrNo=='y' || yesOrNo=='Y');
 return 0;
-}
-		
-		
-		
-			
+}		
