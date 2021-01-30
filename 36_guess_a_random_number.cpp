@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cstdlib>
+#include<time.h>
 using namespace std;
 int main()
 {
@@ -7,6 +8,7 @@ int main()
 	char yesOrNo; 
 	cout<<"Do YOu want to guess a Number? (y for yes)";
 	cin>>yesOrNo;
+	srand(time(0));
 	while (yesOrNo=='y' || yesOrNo=='Y')
 	{	
 		randomNumber=(rand() % 100) + 1;
